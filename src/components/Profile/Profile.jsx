@@ -13,17 +13,29 @@ export function Profile({ username, tag, location, avatar, stats }) {
       <ul className={css.stats}>
         <li>
           <span className={css.label}>Followers</span>
-          <span className={css.quantity}>1000</span>
+          <span className={css.quantity}>{stats.followers}</span>
         </li>
         <li>
           <span className={css.label}>Views</span>
-          <span className={css.quantity}>2000</span>
+          <span className={css.quantity}>{stats.views}</span>
         </li>
         <li>
           <span className={css.label}>Likes</span>
-          <span className={css.quantity}>3000</span>
+          <span className={css.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
   );
 }
+
+// {
+//   "username": "Jacques Gluke",
+//   "tag": "jgluke",
+//   "location": "Ocho Rios, Jamaica",
+//   "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+//   "stats": {
+//     "followers": 5603,
+//     "views": 4827,
+//     "likes": 1308
+//   }
+// }
