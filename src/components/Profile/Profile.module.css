@@ -1,0 +1,64 @@
+/* Style the profile card */
+.profile {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.profile:hover {
+  transform: translateY(-5px);
+}
+
+/* Style the user avatar */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Style user information */
+.description {
+  text-align: center;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.tag {
+  color: #777;
+  margin: 5px 0;
+}
+
+.location {
+  color: #555;
+  margin: 0;
+}
+
+/* Style the statistics */
+.stats {
+  padding: 0;
+  text-align: center;
+}
+
+.stats li {
+  margin: 10px 0;
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.quantity {
+  font-size: 18px;
+  color: #333;
+}
