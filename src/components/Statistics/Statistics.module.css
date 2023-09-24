@@ -23,7 +23,6 @@
 
 .statList {
   display: flex;
-  justify-content: space-between;
   padding: 0;
   gap: 10px;
 }
@@ -44,6 +43,5 @@
 
 .percentage {
   color: #777;
-  text-align: right;
   font-size: 20px;
 }
