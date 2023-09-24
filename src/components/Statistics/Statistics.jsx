@@ -8,8 +8,8 @@ export function Statistics({ title, stats }) {
         {stats.map(item => {
           return (
             <li className={css.item} key={item.id}>
-              <span className={css.label}>{item.label}</span>
-              <span className={css.percentage}>{item.percentage}</span>
+              <p className={css.label}>{item.label}</p>
+              <p className={css.percentage}>{item.percentage}</p>
             </li>
           );
         })}
