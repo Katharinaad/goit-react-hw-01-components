@@ -2,7 +2,7 @@ import css from './FriendListItem.module.css';
 
 export function FriendListItem({ friend }) {
   return (
-    <li className={css.item} key={friend.id}>
+    <li className={css.item}>
       <span
         className={friend.isOnline ? css.statusOnline : css.statusOffline}
       ></span>
