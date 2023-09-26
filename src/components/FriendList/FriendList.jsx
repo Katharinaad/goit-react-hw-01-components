@@ -4,8 +4,13 @@ import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 export function FriendList({ friends }) {
   return (
     <ul className={css.friendList}>
-      {friends.map(element => (
-        <FriendListItem key={element.id} friend={element} />
+      {friends.map(({ avatar, name, isOnline, id }) => (
+        <FriendListItem
+          key={id}
+          avatar={avatar}
+          name={name}
+          isOnline={isOnline}
+        />
       ))}
     </ul>
   );
