@@ -5,11 +5,11 @@ export function Statistics({ title, stats }) {
     <section className={css.statistics}>
       <h2 className={css.title}>{title}</h2>
       <ul className={css.statList}>
-        {stats.map(item => {
+        {stats.map(({ id, label, percentage }) => {
           return (
-            <li className={css.item} key={item.id}>
-              <p className={css.label}>{item.label}</p>
-              <p className={css.percentage}>{item.percentage}</p>
+            <li className={css.item} key={id}>
+              <p className={css.label}>{label}</p>
+              <p className={css.percentage}>{percentage}</p>
             </li>
           );
         })}
